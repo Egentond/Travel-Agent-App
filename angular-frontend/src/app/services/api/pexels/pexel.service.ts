@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class PexelService {
   private apiUrl = 'https://api.pexels.com/v1/search';
-  private apiKey = 'Np6xVdHPrinY1rhngLnip9YJfiZsLwhc2epYqQqVhrrYRlSc6FVMFMPH';  
+  private apiKey = '';  
 
   constructor(private http: HttpClient) { }
 
