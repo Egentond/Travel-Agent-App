@@ -1,0 +1,21 @@
+<div class="success">
+    <h1>Success!</h1>
+    <div class="details" *ngIf="createdDest">
+        <p class="successMessage">
+            You have succesfully submitted your destination details<br>
+            Return to <a href="../search">search page</a>
+        </p>
+    </div>
+    <div class="details" *ngIf="deletedDest">
+        <p class="successMessage">
+            You have succesfully deleted your destination details<br>
+            Return to <a href="../search">search page</a>
+        </p>
+    </div>
+    <div class="details" *ngIf="updatedDest">
+        <p class="successMessage">
+            You have succesfully updated your destination details<br>
+            Return to <a href="../search">search page</a>
+        </p>
+    </div>
+</div>

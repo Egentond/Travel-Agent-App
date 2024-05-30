@@ -1,0 +1,18 @@
+<div [ngStyle]="{'background-image': 'url(' + photo + ')'}" class="display-destination-background">
+    <div class="displayDestination" >
+        <h1>{{destination.name}}</h1>
+        <p id="description">{{destination.description}}</p>
+        <div class="details">
+            <p>City: <strong>{{destination.city}}</strong></p>
+            <p>Country: <strong>{{destination.country}}</strong></p>
+            <p>Average Rating:
+                <strong id="rating" 
+                        [ngClass]="{
+                            'rating-good': destination.averageRating >= 4,
+                            'rating-ok': destination.averageRating >= 2 && destination.averageRating < 4,
+                            'rating-bad': destination.averageRating < 2
+                        }">{{destination.averageRating}}</strong>    
+            </p>
+        </div>
+    </div>
+</div>

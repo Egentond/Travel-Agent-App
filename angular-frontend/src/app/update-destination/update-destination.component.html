@@ -1,0 +1,30 @@
+<div class="destUpdate">
+    <h1>Update your chosen destination</h1>
+    <form [formGroup]="destinationForm" (ngSubmit)="onSubmit()" class="updateDestination" type="submit" >
+        <div class="details">
+            <label>Name (City Name) of the destination you want to update</label><br>
+            <input class="details" type="text" formControlName="name" name="name" placeholder="City name">
+        </div>
+
+        <h2>Fill out the feilds below that you would like to be updated</h2>
+        <div class="details">
+            <label>Breif description of the city</label><br>
+            <textarea class="details" aria-label="With textarea" formControlName="description" name="description"></textarea>
+        </div>
+        <div class="details">
+            <label>City</label><br>
+            <input class="details" id="city" type="text" formControlName="city" placeholder="City" name="details">
+        </div>
+        <div class="details">
+            <label>Country</label><br>
+            <input class="details" id="country" type="text" formControlName="country" placeholder="Country" name="country">
+        </div>
+        <div class="details">
+            <label>Average Rating (scale: 0.0 - 5.0)</label><br>
+            <input class="details" id="rating" type="number" formControlName="averageRating" placeholder="0.0" min="0.0" max="5.0" name="averageRating">
+        </div>
+        <div class="details">
+            <button class="submit" type="submit">Submit</button>
+        </div>
+    </form>
+</div>

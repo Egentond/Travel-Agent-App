@@ -1,0 +1,30 @@
+<body>
+    <div class="createNewDestination">
+        <h1>Submit a new destination description</h1>
+        <form [formGroup]="destinationForm" (ngSubmit)="onSubmit()" class="createDestination" type="submit" >
+            <div class="details">
+                <label>Name (City Name)</label><br>
+                <input class="details" type="text" formControlName="name" name="name" placeholder="City name">
+            </div>
+            <div class="details">
+                <label>Breif description of the city</label><br>
+                <textarea class="details" aria-label="With textarea" formControlName="description" name="description"></textarea>
+            </div>
+            <div class="details">
+                <label>City</label><br>
+                <input class="details" id="city" type="text" formControlName="city" placeholder="City" name="details">
+            </div>
+            <div class="details">
+                <label>Country</label><br>
+                <input class="details" id="country" type="text" formControlName="country" placeholder="Country" name="country">
+            </div>
+            <div class="details">
+                <label>Average Rating (scale: 0.0 - 5.0)</label><br>
+                <input class="details" id="rating" type="number" formControlName="averageRating" placeholder="0.0" min="0.0" max="5.0" name="averageRating">
+            </div>
+            <div class="details">
+                <button class="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>

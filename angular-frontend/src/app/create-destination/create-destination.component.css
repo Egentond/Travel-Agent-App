@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding-top: 50px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255); 
+}
+h1 {
+    color: #f5f7fa;
+}
+
+.createNewDestination {
+    width: 100%;
+    max-width: 600px; /* Limits the width of the form */
+    padding: 20px;
+    background-color: rgb(110, 151, 241); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.createNewDestination h1 {
+    color: aliceblue; /* Light text for contrast against the blue background */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.createDestination {
+    width: 100%;
+    background-color: rgb(110, 151, 241); 
+}
+
+.details {
+    margin-top: 0;
+    margin-bottom: 15px; /* Adds space between each form control group */
+}
+
+.details label {
+    display: block; /* Makes the label display on its own line */
+    color: aliceblue;
+}
+
+.details input[type="text"],
+.details input[type="number"],
+.details textarea {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%; /* Full width of its parent */
+    padding: 10px;
+    border-radius: 5px; /* Slightly rounded corners for aesthetics */
+    border: none; /* Removes default border */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+}
+
+.submit {
+    padding: 10px 20px;
+    color: #6e97f1; /* Blue color to match the background */
+    background-color: aliceblue; /* Light background for the button */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #bdc3c7; /* Changes background on hover for a button interaction effect */
+}

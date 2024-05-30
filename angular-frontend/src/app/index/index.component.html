@@ -1,0 +1,26 @@
+<body>
+    <div class="citySearch">
+        <h1>Find your destination now</h1>
+        <form  [formGroup]="destinationForm" (ngSubmit)="onSubmit()" class="findByCity" type="submit" >
+            <div class="details">
+                <label>Enter the name of the city you want to search for below</label><br>
+                <input id="cityInput" type="text" placeholder="City name" formControlName="city" name="city">
+            </div>
+            <div class="details">
+                <button class="search" type="submit" >Search</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="errors" *ngIf="emptyInput">
+        <p id="emptyInputError">please enter the name of a city</p>
+    </div>
+    <div class="errors" *ngIf="noDataFound">
+        <p id="notFoundError">404: No data on "{{destinationForm.value.city}}" was found. Try one of the following:</p>
+        <ul class="list">
+            <li>Make sure that the first letter of the city name is a capital letter</li>
+            <li>Try a new city name</li>
+            <li>Create your own submission for "{{destinationForm.value.city}}" by navigating to the <a href="/create">Create</a> page</li>      
+        </ul>
+    </div>
+</body>

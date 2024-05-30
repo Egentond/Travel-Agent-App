@@ -1,0 +1,47 @@
+.display-destination-background {
+    margin: 0;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.display-destination-background {
+    height: 100vh; /* Adjust height as necessary */
+    background-size: cover;
+    background-position: center;
+}
+
+.displayDestination {
+    display: block;
+    align-items: center;
+    width: 100%; 
+    max-width: 600px; 
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.11); /* Adjust opacity here */
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(206, 206, 206, 0.1); 
+    text-align: center; 
+    backdrop-filter: blur(5px); /* Adjust blur intensity here */
+}
+.displayDestination h1, p {
+    color: #ffffff;
+}
+#description {
+    font-size: large;
+    padding-bottom: 50px;
+}
+.details {
+    font-size: x-large;
+}
+.rating-bad {
+    color: rgb(211, 0, 0);
+}
+
+.rating-ok {
+    color: orange;
+}
+
+.rating-good {
+    color: rgb(0, 255, 0);
+}
